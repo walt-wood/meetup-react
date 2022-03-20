@@ -3,7 +3,7 @@ import Card from "../ui/Card";
 // Allows use of React created ref objects
 import { useRef } from "react";
 
-function NewMeetupForm() {
+function NewMeetupForm(props) {
   const titleInputRef = useRef();
   const imageInputRef = useRef();
   const addressInputRef = useRef();
@@ -28,7 +28,7 @@ function NewMeetupForm() {
       description: enteredDescription,
     };
 
-    console.log(meetupData);
+    props.onAddMeetup(meetupData);
   }
 
   // For keeping track of input, there are two ways. We could add onChange event listener to each input tag which stores each letter typed, but
