@@ -1,7 +1,11 @@
 // Loads and displays all meetups
 
 function AllMeetupsPage() {
-  return <div>All Meetups</div>;
+  return (
+    <div>
+      <p>All Meetups Page</p>
+    </div>
+  );
 }
 
 export default AllMeetupsPage;
