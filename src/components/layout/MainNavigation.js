@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom";
 
+// Name must end with ".module.css" to allow scoped style, or different styles for each component.
+// Imports an object from the css file which are properties.
+import classes from "./MainNavigation.module.css";
+
 function MainNavigation() {
   return (
-    <header>
-      <div>React Meetups</div>
+    <header className={classes.header}>
+      <div className={classes.logo}>React Meetups</div>
       <nav>
         <ul>
           <li>
