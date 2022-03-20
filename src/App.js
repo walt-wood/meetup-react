@@ -5,10 +5,13 @@ import AllMeetupsPage from "./pages/AllMeetups";
 import NewMeetupPage from "./pages/NewMeetup";
 import FavoritesPage from "./pages/Favorites";
 
+import MainNavigation from "./components/layout/MainNavigation";
+
 // Each component will be displyed if Route determines the url matches the current page, so if you at Favorites, the Favorite component will display.
 function App() {
   return (
     <div>
+      <MainNavigation />
       <Routes>
         <Route path="/meetup-react" element={<AllMeetupsPage />} />
         <Route path="/meetup-react/new-meetup" element={<NewMeetupPage />} />
