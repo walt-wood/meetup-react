@@ -1,6 +1,5 @@
 // Route component defines different paths in the URL we are listening to and which components are needed.
 import { Route, Routes } from "react-router-dom";
-
 import AllMeetupsPage from "./pages/AllMeetups";
 import NewMeetupPage from "./pages/NewMeetup";
 import FavoritesPage from "./pages/Favorites";
