@@ -20,9 +20,10 @@ function NewMeetupPage() {
         },
       }
     ).then(() => {
-      // then retns promise from ?
+      // then retrns promise from fetch
       // history.push() pushes to top of history stack
       // replace won't allow usr to use back button
+      // navigate is updated react code
       navigate("/meetup-react/", { replace: true });
     });
   }
