@@ -15,7 +15,8 @@ function MeetupItem(props) {
     } else {
       favoritesContext.addFavorite({
         id: props.id,
-        title: props.description,
+        title: props.title,
+        description: props.description,
         image: props.image,
         address: props.address,
       });
